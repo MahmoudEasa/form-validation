@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Libraries
+
+@material-ui/core:
+
+### `yarn add @material-ui/core`
+
+formik:
+
+### `yarn add formik`
+
+yup:
+
+### `yarn add yup`
+
 ## Available Scripts
 
 In the project directory, you can run:
