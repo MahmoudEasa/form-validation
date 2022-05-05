@@ -113,6 +113,16 @@ const FormSteps = (props) => {
     <>
       {childrenArr[step]}
 
+      {step < childrenArr.length - 1 && (
+        <Button
+          disabled={props.isSubmitting}
+          variant="contained"
+          onClick={goNext}
+        >
+          Next
+        </Button>
+      )}
+
       {step > 0 && (
         <Button
           disabled={props.isSubmitting}
@@ -121,16 +131,6 @@ const FormSteps = (props) => {
           onClick={goBack}
         >
           Back
-        </Button>
-      )}
-
-      {step < childrenArr.length - 1 && (
-        <Button
-          disabled={props.isSubmitting}
-          variant="contained"
-          onClick={goNext}
-        >
-          Next
         </Button>
       )}
 
